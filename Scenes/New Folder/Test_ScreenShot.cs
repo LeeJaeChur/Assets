@@ -159,8 +159,7 @@ namespace Rito.Tests
             if (Directory.Exists(FolderPath) == false)
             {
                 Debug.Log("폴더생성");
-                Directory.CreateDirectory(FolderPath);
-                //Debug.Log("바뀐거 알아보냐?");
+                Directory.CreateDirectory(FolderPath);              
             }
             gameNum++;
             //Debug.Log("start : " + gameNum);
