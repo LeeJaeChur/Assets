@@ -160,7 +160,7 @@ namespace Rito.Tests
             {
                 Debug.Log("폴더생성");
                 Directory.CreateDirectory(FolderPath);
-                Debug.Log("바뀐거 알아보냐?");
+                //Debug.Log("바뀐거 알아보냐?");
             }
             gameNum++;
             //Debug.Log("start : " + gameNum);
