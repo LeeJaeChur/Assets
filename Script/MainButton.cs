@@ -77,9 +77,9 @@ public class MainButton : MonoBehaviour
     //(3/7)추가
     public void OnClickshot_button()
     {
-        GameObject.Find("Panel").GetComponent<Fadeout>().shot_fo = true;  //페이드아웃의 다음 화면이동용
+        GameObject.Find("Panel").GetComponent<Fadeout>().shot_fo = true;  //페이드아웃의 다음 화면이동용(
         //(3/7)
-        GameObject.Find("Panel").GetComponent<Fadeout>().shot_select = true;//라인 버튼
+        GameObject.Find("Panel").GetComponent<Fadeout>().shot_select = true;//10초/스위치 선택 버튼 활성화
 
         fade_shot = GameObject.Find("Panel").GetComponent<Fadeout>().shot_fo;
         GameObject.Find("Panel").GetComponent<Fadeout>().MainFade();

@@ -201,9 +201,11 @@ namespace Rito.Tests
             //(3/7)
             if (cut == max_cut)
             {
+                
                 if(!isfadeout)
                 {                    
                     GameObject.Find("Panel_shot").GetComponent<Fadeout>().MainFade();
+                    GameObject.Find("endment").GetComponent<Fadeout_text>().MainFade();
                     isfadeout = true;
                     GameObject.Find("Panel_shot").GetComponent<Fadeout>().shot_end = isfadeout;
                 }

@@ -15,11 +15,17 @@ public class Fadeout : MonoBehaviour
     public bool shot_fo = false;
     public bool shot_select = false;
     public bool shot_end = false;
+
+    //(3/10)Back_Button.cs
+    public bool bb_fadeout = false;
+    int SM;
+   
     // Start is called before the first frame update
     void Awake()
     {
         image = GetComponent<Image>();
-     //   button = GameObject.Find("MainButton").GetComponent<MainButton>();
+        //   button = GameObject.Find("MainButton").GetComponent<MainButton>();
+        SM = SceneManager.GetActiveScene().buildIndex;
     }
 
     private void Start()
@@ -84,7 +90,7 @@ public class Fadeout : MonoBehaviour
             //SceneManager.LoadScene("Camera");
             SceneManager.LoadScene("Screen Shot Test Scene");
         }
-        //(3/4)작업
+        //(3/4)작업.Test_ScreenShot.cs
         else if (shot_fo)
         {
             GameObject.Find("Shot_Select_menu").SetActive(false);           //샷선택버튼 비활성화
@@ -104,12 +110,18 @@ public class Fadeout : MonoBehaviour
                 GameObject.Find("Canvas").transform.Find("Btn_Screen Shot Without UI").gameObject.SetActive(true);
             }
         }
-        //(3/8)
+        //(3/8)Test_ScreenShot.cs
         else if(shot_end)
         {
             Invoke("next_scene", 2.0f); //2초뒤 화면전환
         }
+        else if (bb_fadeout)//(3/10)Back_Button.cs
+        {
+            SM--;
+            SceneManager.LoadScene(SM);
+        }
 
+       
     }
     //(3/7)레벨이동 딜레이
     private void next_scene()
