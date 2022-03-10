@@ -9,9 +9,7 @@ using UnityEngine.SceneManagement;
 public class Back_Button : MonoBehaviour
 {
     public Button BackButton;
-  
-    bool isFade = false;
-
+ 
     private void Awake()
     {
         BackButton.onClick.AddListener(BackScene);

@@ -108,7 +108,12 @@ namespace Rito.Tests
             //(3/3)테스트용 리셋버튼
             //resetButton.onClick.AddListener(ResetScene);
 
-           
+            if (Directory.Exists(FolderPath) == false)
+            {
+                Debug.Log("폴더생성");
+                Directory.CreateDirectory(FolderPath);
+            }
+
             //(3/3)시작시 파일없으면 생성. 첫 실행시
             if (File.Exists(@$"{RootPath}/{folderName}/DataSave.dat") == false)
             {
