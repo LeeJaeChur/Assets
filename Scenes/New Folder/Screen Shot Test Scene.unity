@@ -700,6 +700,7 @@ MonoBehaviour:
   shot_fo: 0
   shot_select: 0
   shot_end: 0
+  bb_fadeout: 0
 --- !u!114 &233914534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -881,6 +882,7 @@ MonoBehaviour:
   shot_fo: 0
   shot_select: 0
   shot_end: 0
+  bb_fadeout: 0
 --- !u!114 &396707218
 MonoBehaviour:
   m_ObjectHideFlags: 0
