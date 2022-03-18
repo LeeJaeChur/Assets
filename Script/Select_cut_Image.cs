@@ -29,13 +29,8 @@ public class Select_cut_Image : MonoBehaviour
     //(3/8)
     public bool isfadeout = false;
     //(3/16)selectcut
-    private int selectcut;
+    //private int selectcut;
     public bool getPhoto = false;
-
-
-
-
-
     public ScreenShotFlash flash;
 
 
@@ -43,8 +38,8 @@ public class Select_cut_Image : MonoBehaviour
     public string fileName = "MyScreenShot";
     public string extName = "png";
 
-    private bool _willTakeScreenShot = false;
-    private bool shot = false;
+    //private bool _willTakeScreenShot = false;
+    //private bool shot = false;
 
     /***********************************************************************
     *                               Fields & Properties

@@ -35,18 +35,6 @@ public class Select_Set_button : MonoBehaviour
         setButton_4.onClick.AddListener(SetPhoto_4);
 
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-     
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
-
 
     private void GetPhoto_1()
     {

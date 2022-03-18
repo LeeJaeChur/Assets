@@ -7,9 +7,6 @@ using System.IO;
 
 public class Select_Set_Image : MonoBehaviour
 {
-
-
-
     public Image imageToShow;        // 띄울 이미지 컴포넌트
 
     //제작
@@ -29,13 +26,6 @@ public class Select_Set_Image : MonoBehaviour
     //(3/16)selectcut
     private int selectcut;
     public bool getPhoto = false;
-
-
-
-
-
-    public ScreenShotFlash flash;
-
 
     public string folderName = "ScreenShots";
     public string fileName = "MyScreenShot";
@@ -74,13 +64,12 @@ public class Select_Set_Image : MonoBehaviour
     void Start()
     {
         lastSavedPath = save_cut;
-        ReadScreenShotFileAndShow(imageToShow);
+        //ReadScreenShotFileAndShow(imageToShow);
     }
 
     // Update is called once per frame
     void Update()
-    {
-        
+    {       
         if (getPhoto)
         {
             cut = GameObject.Find("cut").GetComponent<Select_Set_button>().cutNum;
@@ -88,8 +77,8 @@ public class Select_Set_Image : MonoBehaviour
             lastSavedPath = save_cut;
             Debug.Log("cut : " + cut);
             Debug.Log("gameNum : " + gameNum);
-            Debug.Log(FolderPath);
-            Debug.Log(lastSavedPath);
+           // Debug.Log(FolderPath);
+           // Debug.Log(lastSavedPath);
             getShot();
             getPhoto = false;
         }
@@ -102,7 +91,7 @@ public class Select_Set_Image : MonoBehaviour
 
     private void ReadScreenShotFileAndShow(Image destination)
     {
-        Debug.Log("오냐?");
+       
         string folderPath = FolderPath;
         string totalPath = lastSavedPath;
 
